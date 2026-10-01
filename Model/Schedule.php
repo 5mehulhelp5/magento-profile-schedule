@@ -26,7 +26,7 @@ class Schedule extends AbstractModel implements ScheduleInterface, IdentityInter
     /**
      * @var string
      */
-    protected $_cacheTag = 'softcommerce_profile_schedule';
+    protected $_cacheTag = false;
 
     /**
      * @var string
@@ -46,7 +46,7 @@ class Schedule extends AbstractModel implements ScheduleInterface, IdentityInter
      */
     public function getIdentities()
     {
-        return [self::CACHE_TAG . '_' . $this->getId()];
+        return [];
     }
 
     /**
