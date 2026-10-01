@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- compare full timestamp in canRunOnetimeProcess so the one-time full process fires on the correct day (partial 'd H' format dropped month/year and misfired)
 
 ## [2.0.4] - 2026-06-17
 
